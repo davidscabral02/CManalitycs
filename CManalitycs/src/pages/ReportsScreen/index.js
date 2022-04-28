@@ -1,24 +1,44 @@
 import React from 'react';
 
-import { Chart } from "react-google-charts";
+import { 
+  Container, 
+  Header, 
+  Title, 
+  Button 
+} from './styles';
 
-import {Container, Header, Title} from './styles';
+import {
+  BarChart
+} from "react-native-chart-kit";
+
+import ModalComponent from '../../components/ModalComponent/index';
+
+import { Dimensions } from "react-native";
+
+
 
 const ReportsScreen = () => {
 
-  const data = [
-    ["Year", "Sales", "Expenses", "Profit"],
-    ["2014", 1000, 400, 200],
-    ["2015", 1170, 460, 250],
-    ["2016", 660, 1120, 300],
-    ["2017", 1030, 540, 350],
-  ];
-  
-  const options = {
-    chart: {
-      title: "Company Performance",
-      subtitle: "Sales, Expenses, and Profit: 2014-2017",
-    },
+  const chartConfig = {
+    backgroundGradientFrom: "#000",
+    backgroundGradientFromOpacity: 0,
+    backgroundGradientTo: "#000",
+    backgroundGradientToOpacity: 0.5,
+    color: (opacity = 1) => `rgba(0, 0, 0, ${opacity})`,
+    barPercentage: 0.5,
+  };
+
+  const screenWidth = Dimensions.get("window").width;
+
+  const [modalVisible, setModalVisible] = React.useState(false);
+
+  const data = {
+    labels: ["Jan", "Fev", "Mar", "Abr", "Maio", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"],
+    datasets: [
+      {
+        data: [7, 2, 0, 10, 8, 7, 6, 7, 3, 4, 9, 5]
+      }
+    ]
   };
 
   return (
@@ -27,15 +47,23 @@ const ReportsScreen = () => {
         <Title> Resumo da Escola </Title>
       </Header>
 
-      <Chart
-      chartType="Bar"
-      width="100%"
-      height="400px"
-      data={data}
-      options={options}
-    />
-      
+      <BarChart
+        data={data}
+        width={screenWidth}
+        height={300}
+        chartConfig={chartConfig}
+        verticalLabelRotation={30}
+      />
+
+      <ModalComponent
+        isShown={modalVisible}
+        onClose={() => setModalVisible(!modalVisible)}
+      />
+      <Button onPress={() => setModalVisible(true)}>
+        <Title> abrir </Title>
+      </Button>
     </Container>
+
   );
 };
 export default ReportsScreen;
