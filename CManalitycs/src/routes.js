@@ -1,6 +1,6 @@
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-
+import Icon from 'react-native-vector-icons/FontAwesome';
 // PAGES
 
 import ReportsScreen from './pages/ReportsScreen';
@@ -24,7 +24,9 @@ export default () => {
           name={item.title}
           component={item.screen}
           options={() => ({
+            tabBarShowLabel: false,
             headerShown: false,
+            tabBarIcon: () => <Icon name="home" size={40} color="#000" />,
             // tabBarIconStyle: {display: 'none'},
           })}
         />
