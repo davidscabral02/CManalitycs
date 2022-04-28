@@ -7,8 +7,12 @@ export const Container = styled.View`
   background-color: #fff;
 `;
 export const Title = styled.Text`
-  flex: 1;
+  color: #fff;
+`;
+export const Button = styled.TouchableOpacity`
   align-items: center;
-  justify-content: space-between;
-  background-color: #fff;
+  width: 160px;
+  height: 80px;
+  margin-top: 120px;
+  background-color: #000;
 `;

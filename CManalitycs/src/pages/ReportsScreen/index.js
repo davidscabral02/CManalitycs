@@ -1,11 +1,19 @@
 import React from 'react';
 // import {} from 'react-native';
-import {Container, Title} from './styles';
+import {Container, Title, Button} from './styles';
+import ModalComponent from '../../components/ModalComponent/index';
 
 const ReportsScreen = () => {
+  const [modalVisible, setModalVisible] = React.useState(false);
   return (
     <Container>
-      <Title> Dalhe </Title>
+      <ModalComponent
+        isShown={modalVisible}
+        onClose={() => setModalVisible(!modalVisible)}
+      />
+      <Button onPress={() => setModalVisible(true)}>
+        <Title> abrir </Title>
+      </Button>
     </Container>
   );
 };
