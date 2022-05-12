@@ -15,8 +15,8 @@ Funcionalidades do produto
   A funcionalidade principal é exibir informações a partir de documentos como XML, PDF, CSV, TXT formatos de arquivos que os professores tenham acesso offline para anotação durante o dia a dia, como na figura 1. A aplicação consome o arquivo produzido pelo professor e exibe as informações de forma dinâmica e com fins de relatório e gestão de informações tendo em vista a facilidade de organização das notas por parte da escola
 
 Integrantes do projeto
- Andre Akira - https://www.linkedin.com/in/andr%C3%A9-akira-4699a11b0/ /n
- David Cabral - https://www.linkedin.com/in/david-cabral-0880981a3/ /n
- Danilo Castro - https://www.linkedin.com/in/danilo-castro-86baa3186/ /n
- Oscar Borges - https://www.linkedin.com/in/oscar-borges-8358561a3/ /n
- Tales Macedo - https://www.linkedin.com/in/talesmaced/ /n
+ Andre Akira - https://www.linkedin.com/in/andr%C3%A9-akira-4699a11b0/ <br>
+ David Cabral - https://www.linkedin.com/in/david-cabral-0880981a3/ <br>
+ Danilo Castro - https://www.linkedin.com/in/danilo-castro-86baa3186/ <br>
+ Oscar Borges - https://www.linkedin.com/in/oscar-borges-8358561a3/ <br>
+ Tales Macedo - https://www.linkedin.com/in/talesmaced/ <br>
