@@ -9,10 +9,10 @@
 
   
 ## Tecnologias utilizadas <br>
- A solução do sistema foi pensada e prototipada utilizando a ferramenta FIGMA, usamos a prototipação inicialmente para avaliar as funcionalidades. A aplicação foi construída para uso Mobile usando o framework React Native, utilizando linguagens para desenvolvimento como Javascript, JSX e CSS, além de algumas bibliotecas para funções específicas, como a “styled-components” para fins de organização de código CSS e JSX, além da “react-native-table-component” que serve para identificar o arquivo inserido no aplicativo e formatar o mesmo.
+ A solução do sistema foi pensada e prototipada utilizando a ferramenta FIGMA, usamos a prototipação inicialmente para avaliar as funcionalidades. A aplicação foi construída para uso Mobile usando o framework React Native, utilizando linguagens para desenvolvimento como Javascript, JSX e CSS, além de algumas bibliotecas para funções específicas, como a “styled-components” para fins de organização de código CSS e JSX, além da “react-native-table-component” que serve para identificar o arquivo inserido no aplicativo e formatar o mesmo. Para a análise de dados foi usado a ferramenta Akkio onde os dados recebidos serão tratados, após esse tratamento serão mandados de volta para o aplicativo.
 
 ## Funcionalidades do produto <br>
-  A funcionalidade principal é exibir informações a partir de documentos como XML, PDF, CSV, TXT formatos de arquivos que os professores tenham acesso offline para anotação durante o dia a dia, como na figura 1. A aplicação consome o arquivo produzido pelo professor e exibe as informações de forma dinâmica e com fins de relatório e gestão de informações tendo em vista a facilidade de organização das notas por parte da escola
+   A funcionalidade principal é exibir informações a partir de documentos como XML, PDF, CSV, TXT formatos de arquivos que os professores tenham acesso offline para anotação durante o dia a dia, como na figura 1. A aplicação consome o arquivo produzido pelo professor e manda para a ferramenta de inteligência artificial onde será feito o tratamento dos dados, assim exibindo as informações de forma dinâmica e com fins de relatório e gestão de informações tendo em vista a facilidade de organização das notas por parte da escola.
 
 ## Integrantes do projeto <br>
  Andre Akira - https://www.linkedin.com/in/andr%C3%A9-akira-4699a11b0/ <br>
